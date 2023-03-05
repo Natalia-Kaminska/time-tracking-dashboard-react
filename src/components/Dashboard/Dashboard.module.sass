@@ -1,0 +1,63 @@
+.dashboard
+  width: 1024px
+  height: 536px
+  background-color: blue
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  grid-template-rows: auto
+  grid-template-areas: "header work play study" "header exercise social self-care" 
+
+  div
+    border: 1px solid black
+
+  .header
+    grid-area: header
+
+  .work
+    grid-area: work
+
+  .play
+    grid-area: play
+
+  .study
+    grid-area: study
+
+  .exercise
+    grid-area: exercise
+
+  .social
+    grid-area: social
+
+  .self-care
+    grid-area: self-care
+
+@media screen and (max-width: 1444px)
+  .dashboard
+    width: 860px
+    height: 469px
+
+@media screen and (max-width: 1266px)
+  .dashboard
+    width: 766px
+    height: 388px
+
+@media screen and (max-width: 968px)
+  .dashboard
+    width: 646px
+    height: 354px
+
+@media screen and (max-width: 769px)
+  .dashboard
+    width: 446px
+    height: 418px
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: auto
+    grid-template-areas: "header header" "work play" "study exercise" "social self-care" 
+
+@media screen and (max-width: 512px)
+  .dashboard
+    width: 446px
+    height: 418px
+    grid-template-columns: 1fr
+    grid-template-rows: repeat(7, 1fr)
+    grid-template-areas: "header" "work" "play" "study" "exercise" "social" "self-care"
