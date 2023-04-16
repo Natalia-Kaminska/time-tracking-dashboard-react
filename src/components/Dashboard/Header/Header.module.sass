@@ -1,0 +1,39 @@
+.header
+  grid-area: header
+  display: flex
+  flex-direction: column
+
+  .avatar-section
+    background-color: hsl(246, 80%, 60%)
+    flex-basis: 65%
+    border-radius: 15px
+    padding: 32px
+
+    .avatar
+      border: 2px solid white
+      border-radius: 50%
+
+    .avatar-header
+      font-size: 14px
+      color: hsl(236.7, 37.5%, 90.6%)
+      padding-top: 32px
+      padding-bottom: 4px
+
+    .avatar-name
+      font-size: 36px
+      color: hsl(235.7, 100%, 91.8%)
+
+  .time-buttons-section
+    display: flex
+    flex-direction: column
+    flex-basis: 35%
+    align-items: flex-start
+    padding: 32px
+    gap: 26px
+
+    p
+      color: hsl(235, 45%, 61%)
+
+@media screen and (max-width: 512px)
+  .header
+    flex-basis: 22%

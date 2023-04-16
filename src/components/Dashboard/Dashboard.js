@@ -1,6 +1,7 @@
-import React from 'react';
+import avatar from '../../images/image-jeremy.png'
 
 import styles from './Dashboard.module.sass';
+import Header from './Header/Header';
 
 const Dashboard = (props) => {
 
@@ -8,7 +9,11 @@ const Dashboard = (props) => {
     <section
       className={styles.dashboard}
     >
-      <div className={styles.header}></div>
+      <Header 
+        class={styles.header} 
+        name={'Jeremy Robson'}
+        avatar={avatar}
+      />
       <div className={styles.work}></div>
       <div className={styles.play}></div>
       <div className={styles.study}></div>
